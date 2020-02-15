@@ -1,0 +1,56 @@
+.Addoreditorder{
+    position: fixed;
+    right: 10px;
+    top: 50px;    
+    width: 30%;
+    background-color: #DDD;
+    box-shadow: 3px 3px 7px #ccc;
+    padding: 10px;
+    height: 100%;
+}
+
+.Addoreditorder input[type="text"],
+.Addoreditorder input[type="number"],
+select{
+    width: 50%;
+    padding: 10px;
+    display: block;
+    margin: auto;
+}
+
+select{
+    width: 55%;
+}
+
+.Addoreditorder button{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: transparent;
+    color: rebeccapurple;
+    outline: none;
+}
+
+.Addoreditorder button:hover{
+    cursor: pointer;
+}
+
+.Addoreditorder input[type="submit"]{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    width: 50%;
+    cursor: pointer;
+}
+
+.Addoreditorder input[type="submit"]:hover{
+    background-color: black;
+    color: #ccc;
+    border:1px solid black;    
+}
+
+.Addoreditorder input[type="active"]{
+    border: 1px solid black;
+    background-color: #EEE;
+    color: black;
+}

@@ -1,0 +1,32 @@
+.Sidebar{
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 300px;
+
+    vertical-align: middle;
+    
+}
+
+.Sidebar h3, 
+.Sidebar p {
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.Sidebar img{
+    width: 100px;
+    margin:0 auto;
+}
+
+@media(min-width:500px){
+    .Sidebar{
+        width: 300px;
+    }
+}

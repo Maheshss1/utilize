@@ -1,0 +1,14 @@
+.LayoutContainer nav{
+    height: 50px;
+    position: fixed;
+    background-color: bisque;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

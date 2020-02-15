@@ -1,0 +1,13 @@
+.MainPage{
+    width: 100%;
+    display: inline-block;
+    margin:0 300px 0 300px;
+    margin-top: 50px;
+    
+}
+
+.MainPage > h1{
+    width: 50%;
+    text-align: center;
+    
+}

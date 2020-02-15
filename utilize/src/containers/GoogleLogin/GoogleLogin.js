@@ -1,12 +1,23 @@
 import React from 'react'
+import * as actions from '../../store/actions/LoginCreator'
+
 import ReactGoogleLogin from 'react-google-login'
 
 import './GoogleLogin.css'
+import { connect } from 'react-redux'
 
 class GoogleLogin extends React.Component{
 
     responseGoogle = (response) => {
         this.props.login(response)
+        this.props.history.replace("/orders")
+    }
+
+    componentDidMount(){
+        const user = localStorage.getItem("loggedInUser")
+        if(user!==null)
+            this.props.history.push('/orders')
+        console.log("hii",user)
     }
 
     render(){
@@ -25,4 +36,10 @@ class GoogleLogin extends React.Component{
 
 }
 
-export default GoogleLogin
+const mapDispatchToProps = dispatch => {
+    return {
+        login: (loginDetails)=>dispatch(actions.login(loginDetails))
+    }
+}
+
+export default connect(null,mapDispatchToProps)(GoogleLogin)
